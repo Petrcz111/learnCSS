@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stránka lekcí</title>
+    <link rel="stylesheet" href="https://api.ssps.cajthaml.eu/file/68f3df8a793bb6d00c5da848">
+    <link rel="stylesheet" href="../CSS/stranka_lekci.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Shade&family=Dancing+Script:wght@400..700&family=Hubballi&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e0e83ecefa.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <h1>lekce</h1>
+            <nav class="hamburger-menu">
+                <button id="hamburger-button">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div id="hamburger-menu-list" class="active">
+                    <ul>
+                        <li><a href="index.html">DOMŮ</a></li>
+                        <li><a href="stranka_lekci.html">LEKCE</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section class="progress-container1">
+            <h2>začátečník</h2>
+            <div class="step-container">
+                <a href="konkretni_lekce.html" class="step1">1</a>
+                <a href="konkretni_lekce2.html" class="step1">2</a>
+                <a href="konkretni_lekce3.html" class="step1">3</a>
+                <a href="konkretni_lekce4.html" class="step1">4</a>
+            </div>
+            <h2>Středně pokročilí</h2>
+            <div class="step-container">
+                <a href="konkretni_lekce8.html" class="step2">8</a>
+                <a href="konkretni_lekce7.html" class="step2">7</a>
+                <a href="konkretni_lekce6.html" class="step2">6</a>
+                <a href="konkretni_lekce5.html" class="step2">5</a>
+            </div>
+            <h2>Pokročilí</h2>
+            <div class="step-container">
+                <a href="konkretni_lekce9.html" class="step3">9</a>
+                <a href="konkretni_lekce10.html" class="step3">10</a>
+                <a href="konkretni_lekce11.html" class="step3">11</a>
+                <a href="konkretni_lekce12.html" class="step3">12</a>
+            </div>
+        </section>
+        <section class="progress-container2">
+            <nav class="progress-card">
+                <button type="button" class="progress-card-button" id="unroll-button">
+                    <h3><i class="fa-solid fa-angle-down"></i> začátečník</h3>
+                </button>
+                <div id="unroll-menu-list">
+                    <ol>
+                        <li><a href="konkretni_lekce.html">Text</a></li>
+                        <li><a href="konkretni_lekce2.html">Rozměry</a></li>
+                        <li><a href="konkretni_lekce3.html">Box model</a></li>
+                        <li><a href="konkretni_lekce4.html">Pozadí</a></li>
+                    </ol>
+                </div>
+                <button class="progress-card-button" type="button" id="unroll-button2">
+                    <h3><i class="fa-solid fa-angle-down"></i> Středně p.</h3>
+                </button>
+                <div id="unroll-menu-list2">
+                    <ol>
+                        <li><a href="konkretni_lekce5.html">Flexbox</a></li>
+                        <li><a href="konkretni_lekce6.html">Grid</a></li>
+                        <li><a href="konkretni_lekce7.html">Pozicování</a></li>
+                        <li><a href="konkretni_lekce8.html">Rozložení</a></li>
+                    </ol>
+                </div>
+                <button class="progress-card-button" type="button" id="unroll-button3">
+                    <h3><i class="fa-solid fa-angle-down"></i> Pokročilí</h3>
+                </button>
+                <div id="unroll-menu-list3">
+                    <ol>
+                        <li><a href="konkretni_lekce9.html">Transformace</a></li>
+                        <li><a href="konkretni_lekce10.html">Stíny</a></li>
+                        <li><a href="konkretni_lekce11.html">Animace</a></li>
+                        <li><a href="konkretni_lekce12.html">Responzivita</a></li>
+                    </ol>
+                </div>
+            </nav>
+            <a href="otazky.html" class="question-button">
+                <h3>Otázky</h3>
+                <i class="fa-solid fa-arrow-right-long"></i>
+            </a>
+        </section>
+    </main>
+    <script src="../JS/hamburger.js"></script>
+    <script src="../JS/unroll.js"></script>
+</body>
+
+</html>

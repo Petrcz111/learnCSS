@@ -1,0 +1,262 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #DDF2FF;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    font-family: Bungee Shade, sans-serif;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #000000;
+    background-color: #DDF2FF;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1800px;
+}
+
+.current-lesson {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    font-family: Bungee Shade, sans-serif;
+    color: #1fb91f;
+    font-size: 30px;
+    background-color: #001B74;
+    padding: 7px 12px;
+    border-radius: 10px;
+}
+
+.hamburger-menu{
+    font-size: 50px;
+    cursor: pointer;
+    color: black;
+    margin-left: auto;
+    transition: 0.2s linear;
+    z-index: 1100;
+    position: relative;
+}
+
+.hamburger-menu button{
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+}
+
+#hamburger-menu-list{
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background-color: #414141cc;
+    max-width: 1100px;
+    left: 50%;
+    transform: translateX(-50%) translateY(0);
+    list-style-type: none;
+    z-index: 80;
+    font-family: hubballi, sans-serif;
+    cursor: default;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: 0.3s linear;
+    top: 98px;
+}
+
+#hamburger-menu-list ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+}
+#hamburger-menu-list a{
+    color: white;
+    text-decoration: none;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+#hamburger-menu-list.active{
+    transform:translateX(-50%) translateY(-250px);
+    transition: 0.3s ease-out;
+}
+
+.hamburger-menu:hover i{
+    transform: scale(1.1);
+    transition: 0.2s linear;
+    color: #001B74;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    max-width: 1800px;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.content-container1{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 30px;
+}
+
+.content-container2{
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.theory-container{
+    display: flex;
+    width: 100%;
+    background-color: #FFFBDF;
+    flex-direction: column;
+    padding: 20px;
+    font-family: hubballi, sans-serif;
+    font-size: 21px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #FFFBDF;
+}
+
+.theory-container span{
+    color: #001B74;
+    font-weight: 800;
+}
+
+.code-container{
+    display: flex;
+    width: 100%;
+    background-color: #0C0D22;
+    flex-direction: column;
+    color: white;
+    font-family: "JetBrains Mono", monospace;
+    padding: 15px;
+    font-size: 21px;
+    box-shadow: 0 0 15px #0C0D22;
+    border-radius: 20px;
+}
+
+pre{
+    overflow-y: auto;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.result-container{
+    display: flex;
+    width: 100%;
+    background-color: #000000;
+    flex-direction: column;
+    color: white;
+    padding: 12px;
+    font-family: "hubballi", sans-serif;
+    font-size: 21px;
+    border-radius: 20px;
+    box-shadow: 0 0 12px black;
+    position: sticky;
+    top: 20px;
+}
+
+.theory-container h2,
+.code-container h2,
+.result-container h2 {
+    margin-bottom: 12px;
+}
+
+iframe{
+    min-height: 600px;
+}
+
+.continue-button{
+    display: flex;
+    width: 100%;
+    padding: 15px 0px;
+    background-color: #000000;
+    color: #00ff00;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: Bungee Shade, sans-serif;
+    font-size: 30px;
+    border-radius: 0 0 15px 15px;
+    border: 3px solid #00ff00;
+    transition: 0.1s ease-out;
+}
+
+.continue-button:hover{
+    background-color: #001B74;
+    border: 0;
+    font-size: 32px;
+    transition: 0.1s linear;
+}
+
+@media (max-width:700px){
+    .container{
+        flex-direction: column;
+        padding:0px 5px;
+    }
+
+    .content-container1{
+        width: 100%;
+    }
+
+    .content-container2{
+        width: 100%;
+    }
+
+    .header-container{
+        flex-direction: column;
+    }
+
+    .current-lesson{
+        font-size: 23px;
+    }
+
+    .hamburger-menu{
+        margin-left: 0;
+        font-size: 35px;
+    }
+
+    #hamburger-menu-list{
+        top: 124px;
+    }
+
+    .result-container{
+        position: static;
+    }
+}
+
+@media (min-width:701px) and (max-width:1200px){
+    .container{
+        flex-direction: column;
+        padding: 0px 8px;
+    }
+
+    .content-container1{
+        width: 100%;
+    }
+
+    .content-container2{
+        width: 100%;
+    }
+
+    .result-container{
+        position: static;
+    }
+}

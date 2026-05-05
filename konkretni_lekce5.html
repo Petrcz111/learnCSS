@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="https://api.ssps.cajthaml.eu/file/68f3df8a793bb6d00c5da848">
+    <link rel="stylesheet" href="../CSS/konkretni_lekce.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Shade&family=Dancing+Script:wght@400..700&family=Hubballi&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e0e83ecefa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/cybertopia-saturated.min.css"
+        integrity="sha512-/XKgmEfFwUOjXvRxW+ew4+oprWYeORSIoSA7s60MRxr1t60b5uZfqTvTc6fXY+BIHA+EanFH3GWGeieTHsu9nQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <h1 class="current-lesson">Flexbox</h1>
+            <nav class="hamburger-menu">
+                <button id="hamburger-button">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div id="hamburger-menu-list" class="active">
+                    <ul>
+                        <li><a href="index.html">DOMŮ</a></li>
+                        <li><a href="stranka_lekci.html">LEKCE</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section class="content-container1">
+            <article class="theory-container">
+                <h2>Teorie</h2>
+                <p>Flexbox je model rozložení, který umožňuje jednoduše řídit rozložení prvků v kontejneru.<br>
+                    <span>display: flex; </span>zapne flexbox na prvku <br>
+                    <span>justify-content </span>řídí rozložení prvků v horizontálním směru<br>
+                    <span>align-items </span>řídí rozložení prvků ve vertikálním směru
+                </p>
+            </article>
+            <article class="code-container">
+                <h2>Kód</h2>
+                <pre><code id="code"></code></pre> <!--AI-->
+            </article>
+            <textarea id="sourceCode" style="display:none;">
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body{
+            background-color: rgb(255, 255, 255);
+        }
+
+        .container{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 30%;
+            height: 200px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Box 1</h2>
+            <p>Obsah boxu 1</p>
+        </div>
+        <div class="box">
+            <h2>Box 2</h2>
+            <p>Obsah boxu 2</p>
+        </div>
+        <div class="box">
+            <h2>Box 3</h2>
+            <p>Obsah boxu 3</p>
+        </div>
+    </div>
+</body>
+</html>
+</textarea>
+        </section>
+        <!--https://chatgpt.com/share/69cec542-d904-8328-9cfb-11d2782f6771-->
+
+        <section class="content-container2">
+            <article class="result-container">
+                <h2>Výsledek</h2>
+                <iframe id="result"></iframe>
+                <a href="stranka_lekci.html" class="continue-button">pokračovat</a>
+            </article>
+        </section>
+    </main>
+
+    <!--AI-->
+    <script src="../JS/script1.js"></script>
+    <script src="../JS/hamburger.js"></script>
+    <script>hljs.highlightAll();</script>
+
+</body>
+
+</html>
